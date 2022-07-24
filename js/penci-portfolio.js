@@ -1,8 +1,8 @@
 (function ($) {
     "use strict";
-    var PENCI = PENCI || {};
+    var GOSO = GOSO || {};
 
-    PENCI.portfolio_extra = function () {
+    GOSO.portfolio_extra = function () {
         if ($().theiaStickySidebar) {
             var top_margin = 90,
                 pbody = $('body');
@@ -27,6 +27,6 @@
     /* Init functions
 	 ---------------------------------------------------------------*/
     $(document).ready(function () {
-        PENCI.portfolio_extra();
+        GOSO.portfolio_extra();
     });
 })(jQuery);	// EOF

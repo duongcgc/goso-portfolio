@@ -75,7 +75,7 @@ $item_style = $item_style ? $item_style : 'text_overlay'
 													if ( has_post_thumbnail() ) {
 														the_post_thumbnail( $image_thumb );
 													} else {
-														echo '<img src="' . PENCI_PORTFOLIO_URL . '/images/no-thumbnail.jpg" alt="' . __( "No Thumbnail", "gosodesign" ) . '" />';
+														echo '<img src="' . GOSO_PORTFOLIO_URL . '/images/no-thumbnail.jpg" alt="' . __( "No Thumbnail", "gosodesign" ) . '" />';
 													}
 													?>
                                                 </a>

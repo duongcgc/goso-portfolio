@@ -16,8 +16,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Define
  */
-define( 'PENCI_PORTFOLIO_DIR', plugin_dir_path( __FILE__ ) );
-define( 'PENCI_PORTFOLIO_URL', plugin_dir_url( __FILE__ ) );
+define( 'GOSO_PORTFOLIO_DIR', plugin_dir_path( __FILE__ ) );
+define( 'GOSO_PORTFOLIO_URL', plugin_dir_url( __FILE__ ) );
 
 /**
  * Main class for Vancouver Portfolio
@@ -123,7 +123,7 @@ if ( ! class_exists( 'Goso_Portfolio' ) ):
 		 * @since  1.0
 		 */
 		public function load_text_domain() {
-			load_plugin_textdomain( 'gosodesign', false, PENCI_PORTFOLIO_DIR . '/languages/' );
+			load_plugin_textdomain( 'gosodesign', false, GOSO_PORTFOLIO_DIR . '/languages/' );
 		}
 
 		/**
@@ -246,8 +246,8 @@ if ( ! class_exists( 'Goso_Portfolio' ) ):
 					$img_url = get_the_post_thumbnail_url( $postid, 'full' );
 				}
 			} else {
-				$image   = '<img src="' . PENCI_PORTFOLIO_URL . '/images/no-thumbnail.jpg" alt="' . __( "No Thumbnail", "gosodesign" ) . '" />';
-				$img_url = PENCI_PORTFOLIO_URL . '/images/no-thumbnail.jpg';
+				$image   = '<img src="' . GOSO_PORTFOLIO_URL . '/images/no-thumbnail.jpg" alt="' . __( "No Thumbnail", "gosodesign" ) . '" />';
+				$img_url = GOSO_PORTFOLIO_URL . '/images/no-thumbnail.jpg';
 			}
 
 			if ( preg_match_all( '#(width|height)=(\'|")?(?<dimensions>[0-9]+)(\'|")?#i', $image, $image_dis ) && 2 == count( (array) $image_dis['dimensions'] ) ) {
